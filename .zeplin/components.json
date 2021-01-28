@@ -13,7 +13,7 @@
   "projects": ["5ad09a8f09d8df0f4612f66f"],
   "components": [
     {
-      "path": "src/stories/Button.stories.ts",
+      "path": "src/stories/button.component.ts",
       "zeplinIds": ["600e6223252f4207bf1171df"],
       "zeplinNames": ["Atoms / Buttons / Success"],
       "storybook": {
