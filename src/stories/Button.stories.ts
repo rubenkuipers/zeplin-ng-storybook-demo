@@ -3,11 +3,8 @@ import { Story, Meta } from '@storybook/angular/types-6-0';
 import Button from './button.component';
 
 export default {
-  title: 'Example/Button',
+  title: 'Design System/Button',
   component: Button,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
 } as Meta;
 
 const Template: Story<Button> = (args: Button) => ({
@@ -15,25 +12,26 @@ const Template: Story<Button> = (args: Button) => ({
   props: args,
 });
 
-export const Primary = Template.bind({});
-Primary.args = {
-  primary: true,
+export const Success = Template.bind({});
+Success.args = {
   label: 'Button',
+  type: 'success',
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
+export const Danger = Template.bind({});
+Danger.args = {
   label: 'Button',
+  type: 'danger',
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
+export const Faded = Template.bind({});
+Faded.args = {
   label: 'Button',
+  type: 'faded',
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
+export const Progress = Template.bind({});
+Progress.args = {
   label: 'Button',
+  type: 'progress',
 };
